@@ -1,0 +1,26 @@
+openapi: 3.0.3
+info:
+  title: SampleApp Mock API
+  version: 0.1.0
+paths:
+  /login:
+    post:
+      summary: Login
+      responses:
+        "200": { description: OK }
+        "401": { description: Unauthorized }
+  /items:
+    get:
+      summary: List items
+      responses:
+        "200": { description: OK }
+  /items/{id}:
+    get:
+      summary: Get item
+      responses:
+        "200": { description: OK }
+  /items/{id}/favorite:
+    put:
+      summary: Toggle favorite
+      responses:
+        "204": { description: No Content }

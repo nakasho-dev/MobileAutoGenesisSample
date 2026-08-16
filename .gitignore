@@ -1,0 +1,17 @@
+android/.gradle/
+android/build/
+android/**/build/
+android/local.properties
+android/**/*.iml
+android/.idea/
+ios/build/
+ios/SampleApp.xcodeproj/
+ios/**/*.xcuserdata
+ios/**/DerivedData
+behave-demo/.venv/
+behave-demo/**/__pycache__/
+behave-demo/**/*.pyc
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+.DS_Store

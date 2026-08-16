@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SampleApp</string>
+
+    <string name="login_title">Login</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_submit">Sign In</string>
+    <string name="login_error">Invalid email or password</string>
+
+    <string name="item_list_title">Items</string>
+    <string name="item_list_empty">No items</string>
+
+    <string name="item_detail_favorite">Favorite</string>
+    <string name="item_detail_back">Back</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Dark Theme</string>
+    <string name="settings_sign_out">Sign Out</string>
+</resources>

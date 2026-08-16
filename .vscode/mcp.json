@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "appium-mcp-server-android": {
+      "command": "uv",
+      "args": [
+        "--directory", "${env:AUTOGENESIS_HOME}/appium-mcp-server",
+        "run", "python", "simple_server.py",
+        "--platform", "android",
+        "--transport", "stdio",
+        "--config", "${workspaceFolder}/config/appium_conf.android.json"
+      ]
+    },
+    "appium-mcp-server-ios": {
+      "command": "uv",
+      "args": [
+        "--directory", "${env:AUTOGENESIS_HOME}/appium-mcp-server",
+        "run", "python", "simple_server.py",
+        "--platform", "ios",
+        "--transport", "stdio",
+        "--config", "${workspaceFolder}/config/appium_conf.ios.json"
+      ]
+    }
+  }
+}

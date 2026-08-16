@@ -1,0 +1,19 @@
+/* Login */
+"login_title" = "Login";
+"login_email_hint" = "Email";
+"login_password_hint" = "Password";
+"login_submit" = "Sign In";
+"login_error" = "Invalid email or password";
+
+/* ItemList */
+"item_list_title" = "Items";
+"item_list_empty" = "No items";
+
+/* ItemDetail */
+"item_detail_favorite" = "Favorite";
+"item_detail_back" = "Back";
+
+/* Settings */
+"settings_title" = "Settings";
+"settings_theme" = "Dark Theme";
+"settings_sign_out" = "Sign Out";

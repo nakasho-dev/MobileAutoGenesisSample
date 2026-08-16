@@ -1,0 +1,42 @@
+name: SampleApp
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    GENERATE_INFOPLIST_FILE: YES
+    ENABLE_TESTABILITY: YES
+targets:
+  SampleApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: SampleApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.SampleApp
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: SampleApp
+    info:
+      path: SampleApp/Info.plist
+      properties:
+        CFBundleDisplayName: SampleApp
+        UILaunchScreen: {}
+  SampleAppUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SampleAppUITests
+    dependencies:
+      - target: SampleApp
+schemes:
+  SampleApp:
+    build:
+      targets:
+        SampleApp: all
+        SampleAppUITests: [test]
+    test:
+      targets:
+        - SampleAppUITests

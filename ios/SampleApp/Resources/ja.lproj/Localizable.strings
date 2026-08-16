@@ -1,0 +1,19 @@
+/* Login */
+"login_title" = "ログイン";
+"login_email_hint" = "メールアドレス";
+"login_password_hint" = "パスワード";
+"login_submit" = "サインイン";
+"login_error" = "メールアドレスまたはパスワードが正しくありません";
+
+/* ItemList */
+"item_list_title" = "アイテム一覧";
+"item_list_empty" = "アイテムがありません";
+
+/* ItemDetail */
+"item_detail_favorite" = "お気に入り";
+"item_detail_back" = "戻る";
+
+/* Settings */
+"settings_title" = "設定";
+"settings_theme" = "ダークテーマ";
+"settings_sign_out" = "サインアウト";
