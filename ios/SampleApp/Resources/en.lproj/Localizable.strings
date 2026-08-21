@@ -1,5 +1,11 @@
+/* Splash */
+"splash_title" = "Splash";
+"splash_logo" = "Logo";
+"splash_transition_hint" = "Moving to Login in 2 seconds";
+
 /* Login */
 "login_title" = "Login";
+"login_welcome" = "Welcome";
 "login_email_hint" = "Email";
 "login_password_hint" = "Password";
 "login_submit" = "Sign In";
@@ -8,10 +14,15 @@
 /* ItemList */
 "item_list_title" = "Items";
 "item_list_empty" = "No items";
+"item_list_refresh" = "Pull to Refresh";
+"item_list_error" = "Could not load items";
+"item_list_settings" = "Settings";
 
 /* ItemDetail */
+"item_detail_title" = "Detail";
 "item_detail_favorite" = "Favorite";
 "item_detail_back" = "Back";
+"item_detail_error" = "Could not load item";
 
 /* Settings */
 "settings_title" = "Settings";

@@ -1,5 +1,11 @@
+/* Splash */
+"splash_title" = "起動";
+"splash_logo" = "ロゴ";
+"splash_transition_hint" = "2秒後にログインへ移動します";
+
 /* Login */
 "login_title" = "ログイン";
+"login_welcome" = "ようこそ / Welcome";
 "login_email_hint" = "メールアドレス";
 "login_password_hint" = "パスワード";
 "login_submit" = "サインイン";
@@ -8,10 +14,15 @@
 /* ItemList */
 "item_list_title" = "アイテム一覧";
 "item_list_empty" = "アイテムがありません";
+"item_list_refresh" = "更新";
+"item_list_error" = "アイテムを取得できませんでした";
+"item_list_settings" = "設定";
 
 /* ItemDetail */
+"item_detail_title" = "詳細";
 "item_detail_favorite" = "お気に入り";
 "item_detail_back" = "戻る";
+"item_detail_error" = "アイテムを取得できませんでした";
 
 /* Settings */
 "settings_title" = "設定";

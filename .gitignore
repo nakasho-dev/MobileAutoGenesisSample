@@ -5,12 +5,17 @@ android/local.properties
 android/**/*.iml
 android/.idea/
 ios/build/
+ios/.build/
 ios/SampleApp.xcodeproj/
 ios/**/*.xcuserdata
+ios/**/*.xcuserstate
 ios/**/DerivedData
 behave-demo/.venv/
 behave-demo/**/__pycache__/
 behave-demo/**/*.pyc
+behave-demo/.pytest_cache/
+behave-demo/.coverage
+behave-demo/htmlcov/
 .vscode/*
 !.vscode/mcp.json
 !.vscode/settings.json

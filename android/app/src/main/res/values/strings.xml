@@ -2,8 +2,14 @@
 <resources>
     <string name="app_name">SampleApp</string>
 
+    <!-- Splash -->
+    <string name="splash_title">起動</string>
+    <string name="splash_logo">ロゴ</string>
+    <string name="splash_transition_hint">2秒後にログインへ移動します</string>
+
     <!-- Login -->
     <string name="login_title">ログイン</string>
+    <string name="login_welcome">ようこそ / Welcome</string>
     <string name="login_email_hint">メールアドレス</string>
     <string name="login_password_hint">パスワード</string>
     <string name="login_submit">サインイン</string>
@@ -12,10 +18,15 @@
     <!-- ItemList -->
     <string name="item_list_title">アイテム一覧</string>
     <string name="item_list_empty">アイテムがありません</string>
+    <string name="item_list_refresh">更新</string>
+    <string name="item_list_error">アイテムを取得できませんでした</string>
+    <string name="item_list_settings">設定</string>
 
     <!-- ItemDetail -->
+    <string name="item_detail_title">詳細</string>
     <string name="item_detail_favorite">お気に入り</string>
     <string name="item_detail_back">戻る</string>
+    <string name="item_detail_error">アイテムを取得できませんでした</string>
 
     <!-- Settings -->
     <string name="settings_title">設定</string>
