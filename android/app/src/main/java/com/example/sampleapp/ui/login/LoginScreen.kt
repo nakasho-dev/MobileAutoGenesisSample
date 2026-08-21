@@ -22,6 +22,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
@@ -47,6 +49,7 @@ fun LoginScreen(
     Scaffold(
         modifier = modifier
             .fillMaxSize()
+            .semantics { contentDescription = TestIds.SCREEN_ROOT_LOGIN }
             .testTag(TestIds.SCREEN_ROOT_LOGIN),
         topBar = {
             Text(
@@ -70,6 +73,7 @@ fun LoginScreen(
                 onValueChange = { email = it },
                 modifier = Modifier
                     .fillMaxWidth()
+                    .semantics { contentDescription = TestIds.LOGIN_EMAIL_FIELD }
                     .testTag(TestIds.LOGIN_EMAIL_FIELD),
                 enabled = !isLoading,
                 label = { Text(stringResource(R.string.login_email_hint)) },
@@ -81,6 +85,7 @@ fun LoginScreen(
                 onValueChange = { password = it },
                 modifier = Modifier
                     .fillMaxWidth()
+                    .semantics { contentDescription = TestIds.LOGIN_PASSWORD_FIELD }
                     .testTag(TestIds.LOGIN_PASSWORD_FIELD),
                 enabled = !isLoading,
                 label = { Text(stringResource(R.string.login_password_hint)) },
@@ -92,6 +97,7 @@ fun LoginScreen(
                 onClick = { viewModel.login(email, password) },
                 modifier = Modifier
                     .fillMaxWidth()
+                    .semantics { contentDescription = TestIds.LOGIN_SUBMIT_BUTTON }
                     .testTag(TestIds.LOGIN_SUBMIT_BUTTON),
                 enabled = !isLoading,
             ) {

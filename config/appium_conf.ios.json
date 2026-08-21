@@ -1,13 +1,14 @@
 {
-  "platformName": "iOS",
-  "server_url": "http://localhost:4723",
-  "capabilities": {
-    "appium:automationName": "XCUITest",
-    "appium:deviceName": "iPhone 15",
-    "appium:platformVersion": "17.5",
-    "appium:app": "${WORKSPACE_ROOT}/ios/build/Build/Products/Debug-iphonesimulator/SampleApp.app",
-    "appium:bundleId": "com.example.SampleApp",
-    "appium:noReset": false,
-    "appium:newCommandTimeout": 300
+  "APPIUM_DRIVER_CONFIGS": {
+    "ios": {
+      "platformName": "iOS",
+      "automationName": "XCUITest",
+      "deviceName": "iPhone 15",
+      "appium:app": "${WORKSPACE_ROOT}/ios/build/Build/Products/Debug-iphonesimulator/SampleApp.app",
+      "bundleId": "com.example.SampleApp",
+      "appium:noReset": false,
+      "appium:newCommandTimeout": 300,
+      "server_url": "http://127.0.0.1:4723"
+    }
   }
 }

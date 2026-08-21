@@ -63,6 +63,12 @@ uv run python -m behave --tags=@smoke
 | Appium capability | config/appium_conf.*.json | Read |
 | MCP config | .vscode/mcp.json | Read |
 
+OS別のAutoGenesis生成先は `behave-demo/features/android_steps/` と
+`behave-demo/features/ios_steps/`。どちらも手動編集禁止。
+
+`vendor/AutoGenesis/` は `THIRD_PARTY_NOTICES.md` に記録された固定revisionの
+上流snapshot。直接編集せず、プロジェクト固有のadapterは `scripts/autogenesis/` に置く。
+
 ## 6. Personas
 - @android-agent : Kotlin/Compose 担当
 - @ios-agent     : Swift/SwiftUI 担当

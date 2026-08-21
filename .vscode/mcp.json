@@ -1,24 +1,28 @@
 {
   "servers": {
-    "appium-mcp-server-android": {
-      "command": "uv",
+    "auto-genesis-mcp-android": {
+      "command": "${workspaceFolder}/scripts/autogenesis/start-mcp.sh",
       "args": [
-        "--directory", "${env:AUTOGENESIS_HOME}/appium-mcp-server",
-        "run", "python", "simple_server.py",
-        "--platform", "android",
-        "--transport", "stdio",
-        "--config", "${workspaceFolder}/config/appium_conf.android.json"
-      ]
+        "android"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8"
+      }
     },
-    "appium-mcp-server-ios": {
-      "command": "uv",
+    "auto-genesis-mcp-ios": {
+      "command": "${workspaceFolder}/scripts/autogenesis/start-mcp.sh",
       "args": [
-        "--directory", "${env:AUTOGENESIS_HOME}/appium-mcp-server",
-        "run", "python", "simple_server.py",
-        "--platform", "ios",
-        "--transport", "stdio",
-        "--config", "${workspaceFolder}/config/appium_conf.ios.json"
-      ]
+        "ios"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8"
+      }
     }
   }
 }
