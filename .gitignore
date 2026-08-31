@@ -16,11 +16,16 @@ behave-demo/.venv/
 behave-demo/.pytest_cache/
 behave-demo/.coverage
 behave-demo/htmlcov/
+behave-demo/features/android_steps/
+behave-demo/features/ios_steps/
+docs/post/
 **/__pycache__/
 **/*.py[cod]
 **/.mypy_cache/
 **/.ruff_cache/
 config/.generated/
+vendor/AutoGenesis/appium-mcp-server/package.json
+vendor/AutoGenesis/appium-mcp-server/package-lock.json
 behave-demo/screenshots/
 .vscode/*
 !.vscode/mcp.json

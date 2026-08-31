@@ -2,9 +2,24 @@
 
 Microsoft AutoGenesis の動作検証用サンプル。**BrowserStack 不使用のローカル完結**構成。
 
-## Quick Start
+## Full Mobile Demo
+fresh clone後に、全Gherkin scenarioを依存順に実装し、Android/iOSの単体テストとローカルAppiumによるBehaveテストまで完了するには、[docs/FULL_MOBILE_DEMO_HOWTO.md](docs/FULL_MOBILE_DEMO_HOWTO.md) を使用します。
+
+準備完了後、Copilot Chatで次を実行します。
+
+```text
+/full-mobile-demo platform=both
+```
+
+デモ計画は `config/full_mobile_demo_plan.json` にあり、現在は `login`、`list_and_detail`、`settings` の順に5 scenarioを実行します。変更後は次でGherkinとの整合性を確認します。
+
 ```bash
-npm install -g appium@2
+python3 scripts/autogenesis/verify_demo_plan.py --print
+```
+
+## Scenario Step Generation
+```bash
+npm install -g appium
 appium driver install uiautomator2
 appium driver install xcuitest
 brew install xcodegen
@@ -48,6 +63,7 @@ AutoGenesis本体は固定revisionで `vendor/AutoGenesis/` に含まれます�
 - docs/GIVEN_STATE_LIBRARY.md : 共通 Given カタログ
 - docs/screenshots/ : 5画面ワイヤーフレーム (Copilot vision 用)
 - docs/ENVIRONMENT.md : AutoGenesis/Appiumの詳細セットアップ
+- docs/FULL_MOBILE_DEMO_HOWTO.md : clone後から全scenarioデモ完了までの手順
 - THIRD_PARTY_NOTICES.md : vendored AutoGenesisの出所と固定revision
 
 ## 詳細は AGENTS.md を参照

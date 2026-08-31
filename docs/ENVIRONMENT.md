@@ -90,6 +90,22 @@ AUTOGENESIS_PLATFORM=ios uv run python -m behave --stage ios --name "Successful 
 `appium-mcp-server/simple_server.py` を起動します。Appium本体はローカルの
 `http://127.0.0.1:4723` だけを使用します。BrowserStackやSauceLabsは使用しません。
 
+## 全scenarioデモ
+
+fresh clone後に全Gherkin scenarioを実装、単体テスト、AutoGenesis生成、Behave再実行まで実施する手順は [FULL_MOBILE_DEMO_HOWTO.md](FULL_MOBILE_DEMO_HOWTO.md) を参照します。
+
+実行計画は `config/full_mobile_demo_plan.json` に定義し、実際のfeatureとの一致は次で確認します。
+
+```bash
+python3 scripts/autogenesis/verify_demo_plan.py --print
+```
+
+環境を準備してlocal Appiumを起動した後、Copilot Chatで実行します。
+
+```text
+/full-mobile-demo platform=both
+```
+
 ## AutoGenesis更新
 
 現在のrevisionは `158020978f651834912ea867b356845549f7a032` です。

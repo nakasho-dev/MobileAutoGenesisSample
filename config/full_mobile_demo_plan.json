@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "platforms": ["android", "ios"],
+  "features": [
+    {
+      "feature": "login",
+      "scenarios": [
+        "Successful login with valid credentials",
+        "Failed login shows error message"
+      ]
+    },
+    {
+      "feature": "list_and_detail",
+      "scenarios": [
+        "Navigate to item detail from list",
+        "Toggle favorite on item detail"
+      ]
+    },
+    {
+      "feature": "settings",
+      "scenarios": [
+        "Sign out returns to login"
+      ]
+    }
+  ]
+}

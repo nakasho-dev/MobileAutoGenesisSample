@@ -19,3 +19,6 @@
 - ローカル: emulator-5554 / iPhone 15 Simulator
 - 1 Scenario は 3〜7 ステップ
 - 待機は wait_for_element_visible。sleep 禁止
+- 全件デモの実行順、featureとscenarioの対応は `config/full_mobile_demo_plan.json` を単一情報源とする。
+- featureごとに、Appium生成の前に対象OSのViewModelまたはMockRepositoryの単体テストとdebug buildを成功させる。
+- AutoGenesis生成後は各scenarioをBehaveで再実行し、最後にplatformタグで全件を実行する。詳細は [FULL_MOBILE_DEMO_HOWTO.md](FULL_MOBILE_DEMO_HOWTO.md) を参照する。
